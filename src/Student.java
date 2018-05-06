@@ -124,7 +124,7 @@ public class Student {
 
 	public String generateID(ArrayList<Student> students) {
 		String id = generateNumber();
-		while (idExist(students, id) == true) {
+		while (idExist(students, id)) {
 			id = generateNumber();
 		}
 		return ID = id;

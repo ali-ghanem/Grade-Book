@@ -99,11 +99,10 @@ public class gradeBook {
 	}
 
 	public static void work() {
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		try {
 			boolean work = true;
-			while (work == true) {
+			while (work) {
 
 				System.out.println("Enter 1 to add students.");
 				System.out.println("Enter 2 to remove a student.");
@@ -150,6 +149,7 @@ public class gradeBook {
 
 					work = false;
 					System.out.println("Bye.");
+					scan.close();
 					System.exit(0);
 				}
 
@@ -167,13 +167,13 @@ public class gradeBook {
 	public static void main(String[] args) {
 
 		try {
-			@SuppressWarnings("resource")
 			Scanner s = new Scanner(System.in);
 			System.out.println("Enter hom many student you want to generate.");
 			int x = s.nextInt();
 			generate(x);
 			System.out.println(x + " Students are generated.");
 			work();
+			s.close();
 		} catch (Exception e) {
 			System.out.println("Invalid input.");
 			main(args);
