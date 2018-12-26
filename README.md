@@ -19,6 +19,8 @@ A menu will appear giving the user 5 options.
     
 - The user enters 5 to terminate the program.
 
+<img src="https://github.com/alimhmdghanem/Grade-Book/blob/master/grade-book-demo.PNG?raw=true" alt="demo">
+
 # Random student generator criteria:
 
 Every student will have a first name, a last name, an ID, quiz 1, quiz 2, project, midterm and final grades, average and letter grade.
